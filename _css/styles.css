@@ -1,14 +1,13 @@
-/* Colour palette
-#fcaa67 - rajah
-#b0413e - pale carmine
-#ffffc7 - very pale yellow
-#548687 - wintergreen dream
-#473335 - taupe
+/* Color Palette
+#2B2D42 - dark blue
+#8D99AE - light blue
+#EDF2F4 - blue/white
+#EF233C - red
 */
 
 /* Global styles
-----------------------*/
-/* border box fix from paulirish.com/2012/box-sizing-border-ftw/  */
+-------------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
 }
@@ -18,12 +17,6 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
-}
-a {
-  color: #EF233C;
-}
-a:hover {
-  text-decoration: none;
 }
 h1, h2 {
   font-family: 'Caveat', cursive;
@@ -36,49 +29,69 @@ h2 {
   font-size: 40px;
   margin-top: 0;
 }
+h3 {
+  margin: 0;
+}
+a {
+  color: #EF233C;
+}
+a:hover {
+  text-decoration: none;
+}
 .content-wrap {
   max-width: 950px;
   margin: 0 auto;
   padding: 60px 50px;
   overflow: hidden;
 }
-.column-narrow {
+.col-narrow {
   width: 30%;
   float: left;
-  /* border: 1px solid black; */
 }
-.column-wide {
+.col-wide {
   width: 70%;
   float: left;
   padding-left: 20px;
-  /* border: 1px solid black; */
 }
 .uppercase {
   text-transform: uppercase;
 }
 
-/* Header and footer
--------------------*/
+/* Download button */
+.btn {
+  text-decoration: none;
+  background: #EF233C;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+}
+
+
+/* Header and Footer
+-------------------------*/
 header, footer {
   background: #2B2D42;
   color: #8D99AE;
 }
 /* header */
- header {
+header {
   padding-top: 50px;
+  position: relative;
 }
 header h1, header h2 {
   color: #EDF2F4;
   margin: 0;
 }
 .profile-img {
-  /*width: 300px;*/
   border-radius: 50%;
-  /*float: left;*/
-  /*margin-right: 30px;*/
+}
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
-/* footer styles only */
+/* footer */
 footer {
   text-align: center;
 }
@@ -87,15 +100,16 @@ footer {
   display: inline-block;
 }
 
-/*  Navigation
-------------------*/
+
+/* Navigation
+-------------------------*/
 nav {
   text-align: center;
   background: white;
   position: fixed;
   top: 0;
   width: 100%;
-  }
+}
 nav a {
   display: inline-block;
   padding: 15px 20px;
@@ -104,23 +118,25 @@ nav a {
   font-weight: 700;
 }
 
+
 /* Work Experience
--------------------*/
+-------------------------*/
 .work {
   background: #EDF2F4;
 }
 h3 ~ p {
   margin: 0;
 }
-.jo-description {
-  margin-bottom: 20px;
+.job-description {
+  margin-bottom: 25px;
 }
 .job-description p:first-of-type {
-  /* margin: 0; */
+  margin-top: 0;
 }
 
-/* education
--------------------*/
+
+/* Education
+-------------------------*/
 .education {
   background: #8D99AE;
 }
